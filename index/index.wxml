@@ -1,0 +1,8 @@
+<view class="section">
+	<view class="section_title">省市选择器</view>
+	<picker mode='multiSelector' value="{{addressIndex}}" range="{{addressArray}}" bindchange="bindAddressPickerChange" bindcolumnchange='bindMutiAddressPickerChange'>
+    <view class="picker">
+			当前选择：{{addressArray[0][addressIndex[0]]}},{{addressArray[1][addressIndex[1]]}}
+    </view>
+	</picker>
+</view>
